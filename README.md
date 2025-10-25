@@ -1,3 +1,3 @@
-# Classification of Structural Protein Sequences for Drug Discovery using Agentic AI
+# Classification of Structural Protein Sequences for Drug Discovery Using Agentic AI
 
 *Work in Progress*
