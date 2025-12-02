@@ -99,7 +99,7 @@ Includes:
 
 - Sequence length distributions  
 - Protein class counts  
-- Amino acid composition & grouping  
+- Amino acid composition & grouping (WordCloud) 
 - PCA and UMAP  
 - Secondary-structure motif logos (Logomaker)
 
@@ -108,6 +108,72 @@ Includes:
 ## 🛠️ Installation
 
 ```bash
-git clone https://github.com/<your-username>/<your-repo>.git
-cd <your-repo>
+git clone https://github.com/paul-london/Machine-Learning-Based-Classification-of-Structural-Protein-Sequences-for-Drug-Discovery.git
+cd Machine-Learning-Based-Classification-of-Structural-Protein-Sequences-for-Drug-Discovery
 pip install -r requirements.txt
+```
+
+---
+
+## 📁 Data Download
+
+Download the dataset from Kaggle:
+
+[Protein Data Set](https://www.kaggle.com/datasets/shahir/protein-data-set)
+
+After downloading, place the files in the main project directory.
+
+---
+
+## ▶️ Usage
+
+Run the main notebook:
+
+```bash
+jupyter notebook notebooks/protein_classification.ipynb
+```
+
+---
+
+## 🔬 Results Summary
+| Pipeline | Method               | Validation Accuracy | Notes                                    |
+| :--------: | :--------------------: | :-------------------: | ---------------------------------------- |
+| **1**    | NLP + Random Forest  | ~69.7%              | Lightweight baseline using 3-mers & SVD  |
+| **2**    | Bidirectional LSTM   | ~78.2%              | Best sequence-based model so far         |
+| **3**    | ESM-2 LLM Embeddings | In progress         | Strongest clustering; evaluation ongoing |
+
+---
+
+## 📘 Discussion
+
+This project highlights how protein sequences can be modeled using modern machine learning techniques, including NLP tokenization, deep learning architectures, and protein language model embeddings.
+
+- **NLP + tree-based models** provide fast, lightweight baselines and capture local sequence patterns.
+- **Bidirectional LSTMs** leverage long-range dependencies within primary structure and deliver strong performance with modest compute.
+- **ESM-2 protein LLM embeddings** offer the richest biological representations and show the strongest potential for accurate, structure-aware classification.
+
+---
+
+## 🔮 Future Work
+
+- Full evaluation and benchmarking of ESM-based classifiers  
+- Fine-tuning transformer-based protein models  
+- Integrating secondary-structure or 3D-derived features  
+- Applying generative modeling approaches for drug discovery  
+
+---
+
+## 📝 Article Citation
+
+**Machine Learning Classification of Structural Protein Sequences for Drug Discovery**  
+Paul London, M.S. & Ernest Bonat, Ph.D. (2025)
+
+---
+
+## 📧 Contact
+
+**Paul London**  
+Bioinformatics & Data Scientist  
+[Email](palondon@hotmail.com)
+[LinkedIn](https://www.linkedin.com/in/palondon)
+
