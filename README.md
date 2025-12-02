@@ -1,7 +1,7 @@
 # 🧬 Machine Learning Classification of Structural Protein Sequences for Drug Discovery
 
-**Authors:**  
-**Paul London**, **Ernest Bonat, Ph.D.**
+*Authors:*  
+**Paul London, M.S., Ernest Bonat, Ph.D.**
 
 ---
 
