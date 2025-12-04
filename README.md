@@ -103,7 +103,10 @@ Includes:
 - PCA and UMAP  
 - Secondary-structure motif logos (Logomaker)
 
+## 📊 Example Visualization
+
 ![](umap.jpg)
+
 *UMAP visualization of 8M-parameter ESM-2 embeddings showing clear clustering of protein classes.*
 
 ---
