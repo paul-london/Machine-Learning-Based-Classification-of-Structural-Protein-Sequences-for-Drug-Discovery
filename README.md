@@ -39,8 +39,8 @@ Data originate from:
 
 Two files are required:
 
-- `metadata.csv` — experimental and structural metadata  
-- `sequences.csv` — amino acid sequences for all chains  
+- `metadata.csv` — (originally `pdb_data_no_dups.csv`) experimental and structural metadata  
+- `sequences.csv` (originally `pdb_data_seq.csv`) — amino acid sequences for all chains  
 
 ### 🔍 Key preprocessing steps
 
