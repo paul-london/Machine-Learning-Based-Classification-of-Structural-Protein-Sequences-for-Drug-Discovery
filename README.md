@@ -39,8 +39,8 @@ Data originate from:
 
 Two files are required:
 
-- `metadata.csv` — experimental and structural metadata  
-- `sequences.csv` — amino acid sequences for all chains  
+- `metadata.csv` — (originally `pdb_data_no_dups.csv`) experimental and structural metadata  
+- `sequences.csv` (originally `pdb_data_seq.csv`) — amino acid sequences for all chains  
 
 ### 🔍 Key preprocessing steps
 
@@ -78,7 +78,7 @@ Two files are required:
 - Class weighting  
 - Trained 50–100 epochs  
 
-**Best validation accuracy:** ~78.2%
+**Accuracy:** ~78.2%
 
 ---
 
@@ -102,6 +102,12 @@ Includes:
 - Amino acid composition & grouping (WordCloud) 
 - PCA and UMAP  
 - Secondary-structure motif logos (Logomaker)
+
+## 📊 Example Visualization
+
+![](umap.jpg)
+
+*UMAP projection of ESM-2 embeddings showing strong overall clustering, but limited separation between individual protein classes.*
 
 ---
 
